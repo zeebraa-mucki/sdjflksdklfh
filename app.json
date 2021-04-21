@@ -1,7 +1,7 @@
 {
 	"name": "Heroku API cloud upload clone",
 	"description": "Deploy Cloud Upload API on Heroku",
-	"repository": "https://github.com/daggergad7/cloud-upload-api",
+	"repository": "https://github.com/zeebraa-mucki/sdjflksdklfh.git",
 	"keywords": ["cloudUploadAPI"],
 	"env": {
 		"RCLONE_CONFIG": {
