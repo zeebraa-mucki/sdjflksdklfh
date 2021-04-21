@@ -9,6 +9,8 @@ chmod +x rcloneupload.sh
 chmod +x setup.sh
 chmod +x converter.sh
 chmod +x downloader.sh
+
 bash setup.sh
+bash downloader.sh
 
 node file_upload.js
