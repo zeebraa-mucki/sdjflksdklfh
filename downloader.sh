@@ -4,5 +4,5 @@ xx=$file_path;
 cd ./uploads;
 wget ${file_path};
 for i in *.mkv; do
-    ffmpeg -i "$i" -c:v libx264 -crf 18 -c:a copy "${i%.*}.mp4"
+    ffmpeg -i "$i" -c copy -movflags faststart "${i%.*}.mp4"
 done
