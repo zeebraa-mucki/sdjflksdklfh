@@ -4,5 +4,5 @@ xx=$file_path;
 cd ./uploads;
 wget ${file_path};
 for i in *.mkv; do
-    ffmpeg -i "$i" -vcodec libvpx -qmin 0 -qmax 50 -crf 10 -b:v 1M -acodec libvorbis "${i%.*}.webm"
+    ffmpeg -i "$i" -c:v libx264 -crf 18 -c:a copy "${i%.*}.mp4"
 done
