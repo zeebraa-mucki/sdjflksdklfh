@@ -4,5 +4,5 @@ xx=$file_path;
 cd ./uploads;
 wget ${file_path};
 for i in *.mkv; do
-    ffmpeg -i "$i" -c:v libx264 -crf 18 -preset medium -c:a aac -b:a 128k -movflags +faststart -vf scale=-2:720,format=yuv420p "${i%.*}.mp4"
+    ffmpeg -i "$i" -c copy -map 0 "${i%.*}.mp4"
 done
