@@ -1,0 +1,21 @@
+{
+  "name": "projsarah",
+  "version": "1.0.0",
+  "main": "file_upload.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "multer": "^1.4.2",
+    "path": "^0.12.7",
+    "shelljs": "^0.8.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node file_upload.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

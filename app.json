@@ -1,0 +1,41 @@
+{
+	"name": "Heroku API cloud upload clone",
+	"description": "Deploy Cloud Upload API on Heroku",
+	"repository": "https://github.com/daggergad7/cloud-upload-api",
+	"keywords": ["cloudUploadAPI"],
+	"env": {
+		"RCLONE_CONFIG": {
+			"description": "(optional to upload converted file to cloud) Rclone config to mount, Copy paste your rClone config file \"\\n\"",
+			"required": false
+		},
+		"RCLONE_DESTINATION": {
+			"description": "Rclone destination path, format \"[drivename A]:[remove path A]",
+			"required": false,
+			"value": "Google:tmp"
+		},
+		"RCLONE_DESTINATION_2": {
+			"description": "Rclone destination path, format \"[drivename A]:[remove path A]\"",
+			"required": false
+		},
+		"RCLONE_DESTINATION_3": {
+			"description": "Rclone destination path, format \"[drivename A]:[remove path A]\"",
+			"required": false
+		},
+		"RCLONE_DESTINATION_4": {
+			"description": "Rclone destination path, format \"[drivename A]:[remove path A]\"",
+			"required": false
+		},
+		"RCLONE_DESTINATION_5": {
+			"description": "Rclone destination path, format \"[drivename A]:[remove path A]\"",
+			"required": false
+		}
+	},
+	"buildpacks": [
+		{
+			"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+		},		
+		{
+			"url": "heroku/nodejs"
+		}	
+	]
+}
