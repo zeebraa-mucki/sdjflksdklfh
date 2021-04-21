@@ -24,8 +24,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.use(express.static(path.resolve(__dirname, 'uploads')));
-app.use('/converted', express.static(__dirname + '/converted_files'));
+app.use('/converted_files', express.static(__dirname + '/converted_files'));
+app.use('/uploads', express.static(__dirname + '/uploads'));
 
 //single file upload api 
 app.post('/api/upload/single', upload.single('singleFile'), (req,res,next) => {

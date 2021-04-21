@@ -3,7 +3,7 @@
 echo -e "$RCLONE_CONFIG" > rclone.conf
 
 export RCLONE_CONFIG=rclone.conf
-topPath=./uploads/ 
+topPath=./converted_files/ 
 
 LIGHT_GREEN_FONT_PREFIX="\033[1;32m"
 FONT_COLOR_SUFFIX="\033[0m"
