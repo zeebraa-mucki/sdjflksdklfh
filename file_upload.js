@@ -20,6 +20,8 @@ var storage = multer.diskStorage({
 
 const upload = multer({ storage : storage});
 
+shell.exec('./downloader.sh "https://gg.bb1.workers.dev/1:/onedl11/The%20Boys%20Season%201%20%20(1080p%20x265%20q22%20FS93%20Joy)/The%20Boys%20S01E01%20The%20Name%20of%20the%20Game%20%20(1080p%20x265%20q22%20FS94%20Joy).mkv"');
+
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));

@@ -7,6 +7,8 @@ export PATH=$PWD/rclone-v1.51.0-linux-amd64:$PATH
 
 chmod +x rcloneupload.sh
 chmod +x setup.sh
+chmod +x converter.sh
+chmod +x downloader.sh
 bash setup.sh
 
 node file_upload.js
